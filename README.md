@@ -53,7 +53,7 @@ To run the tests, use the following command:
 python manage.py test
 
 
-
+```bash
 ## Project Structure
 
 join-api/
