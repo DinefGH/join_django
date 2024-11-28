@@ -49,8 +49,9 @@ Join API is a Django RESTful API designed to manage tasks, contacts, categories,
 
 To run the tests, use the following command:
 
-```bash
+
 python manage.py test
+
 
 
 ## Project Structure
