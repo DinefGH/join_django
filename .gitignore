@@ -1,0 +1,50 @@
+/env
+
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django migrations
+**/migrations/*
+
+# Environment variables
+.env
+
+# Virtual environment folders
+venv/
+.env/
+.venv/
+env/
+ENV/
+venv.bak/
+venv_*/
+
+# Database files
+*.sqlite3
+db.sqlite3
+
+# Django static and media files
+/staticfiles/
+/mediafiles/
+
+# Local Django settings (if you have a separate settings file for local development)
+local_settings.py
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Compiled C files (if any)
+*.so
+
+# VSCode settings and workspace
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+# Docker files
+docker-compose.yml
+*.pid

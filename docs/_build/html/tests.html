@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>tests package &#8212; Join_api 2024 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/groundwork.css?v=594d7a89" />
+    <script src="_static/documentation_options.js?v=6fefd858"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Join_api 2024 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">tests package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="tests-package">
+<h1>tests package<a class="headerlink" href="#tests-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-tests.test_admin">
+<span id="tests-test-admin-module"></span><h2>tests.test_admin module<a class="headerlink" href="#module-tests.test_admin" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-tests.test_forms">
+<span id="tests-test-forms-module"></span><h2>tests.test_forms module<a class="headerlink" href="#module-tests.test_forms" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_forms.ContactFormTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_forms.</span></span><span class="sig-name descname"><span class="pre">ContactFormTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_forms.ContactFormTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>ContactFormTest:</p>
+<p>A test case class that verifies the validity of the ContactForm under different conditions, 
+ensuring that the form behaves as expected when given valid or invalid input.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_forms.ContactFormTest.test_invalid_contact_form">
+<span class="sig-name descname"><span class="pre">test_invalid_contact_form</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_forms.ContactFormTest.test_invalid_contact_form" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_forms.ContactFormTest.test_valid_contact_form">
+<span class="sig-name descname"><span class="pre">test_valid_contact_form</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_forms.ContactFormTest.test_valid_contact_form" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-tests.test_models">
+<span id="tests-test-models-module"></span><h2>tests.test_models module<a class="headerlink" href="#module-tests.test_models" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_models.CategoryModelTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_models.</span></span><span class="sig-name descname"><span class="pre">CategoryModelTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CategoryModelTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>CategoryModelTest:</p>
+<p>Tests the Category model, verifying that categories are correctly created with the specified name and color, 
+and checks the string representation of a category.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.CategoryModelTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CategoryModelTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.CategoryModelTest.test_category_creation">
+<span class="sig-name descname"><span class="pre">test_category_creation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CategoryModelTest.test_category_creation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_models.ContactModelTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_models.</span></span><span class="sig-name descname"><span class="pre">ContactModelTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.ContactModelTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>ontactModelTest:</p>
+<p>Tests the Contact model, ensuring that contacts are correctly created with the associated user, 
+and verifying their attributes such as name, email, phone, and color.
+It also checks the correct string representation of a contact.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.ContactModelTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.ContactModelTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.ContactModelTest.test_contact_creation">
+<span class="sig-name descname"><span class="pre">test_contact_creation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.ContactModelTest.test_contact_creation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_models.CustomUserManagerTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_models.</span></span><span class="sig-name descname"><span class="pre">CustomUserManagerTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CustomUserManagerTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>CustomUserManagerTest:</p>
+<p>Tests the CustomUserManager, specifically the methods for creating users and superusers. 
+It verifies that users are created with the correct attributes 
+and checks that appropriate exceptions are raised when required fields are missing or invalid.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.CustomUserManagerTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CustomUserManagerTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.CustomUserManagerTest.test_create_superuser">
+<span class="sig-name descname"><span class="pre">test_create_superuser</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CustomUserManagerTest.test_create_superuser" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.CustomUserManagerTest.test_create_superuser_without_is_staff">
+<span class="sig-name descname"><span class="pre">test_create_superuser_without_is_staff</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CustomUserManagerTest.test_create_superuser_without_is_staff" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.CustomUserManagerTest.test_create_superuser_without_is_superuser">
+<span class="sig-name descname"><span class="pre">test_create_superuser_without_is_superuser</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CustomUserManagerTest.test_create_superuser_without_is_superuser" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_models.CustomUserModelTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_models.</span></span><span class="sig-name descname"><span class="pre">CustomUserModelTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CustomUserModelTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>CustomUserModelTest:</p>
+<p>Tests the CustomUser model, focusing on the creation of regular users and superusers, 
+verifying their attributes such as email, password, and permissions, and ensuring the correct string representation.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.CustomUserModelTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CustomUserModelTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.CustomUserModelTest.test_create_superuser">
+<span class="sig-name descname"><span class="pre">test_create_superuser</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CustomUserModelTest.test_create_superuser" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.CustomUserModelTest.test_create_user">
+<span class="sig-name descname"><span class="pre">test_create_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.CustomUserModelTest.test_create_user" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_models.SubtaskModelTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_models.</span></span><span class="sig-name descname"><span class="pre">SubtaskModelTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.SubtaskModelTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>SubtaskModelTest:</p>
+<p>Tests the Subtask model, verifying that subtasks are correctly created with the specified text and completion status. 
+It also checks the string representation of a subtask.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.SubtaskModelTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.SubtaskModelTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.SubtaskModelTest.test_subtask_creation">
+<span class="sig-name descname"><span class="pre">test_subtask_creation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.SubtaskModelTest.test_subtask_creation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_models.TaskModelTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_models.</span></span><span class="sig-name descname"><span class="pre">TaskModelTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.TaskModelTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>TaskModelTest:</p>
+<p>Tests the Task model, ensuring that tasks are correctly created with all associated attributes such as title, description, 
+priority, due date, category, and creator. 
+It also verifies the relationships with contacts and ensures the correct string representation of a task.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.TaskModelTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.TaskModelTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_models.TaskModelTest.test_task_creation">
+<span class="sig-name descname"><span class="pre">test_task_creation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_models.TaskModelTest.test_task_creation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-tests.test_serializers">
+<span id="tests-test-serializers-module"></span><h2>tests.test_serializers module<a class="headerlink" href="#module-tests.test_serializers" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_serializers.CategorySerializerTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_serializers.</span></span><span class="sig-name descname"><span class="pre">CategorySerializerTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.CategorySerializerTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>CategorySerializerTest:</p>
+<p>Tests the CategorySerializer, ensuring that categories are created with valid data and correctly serialized, 
+verifying that both name and color fields are accurately reflected in the serialized output.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.CategorySerializerTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.CategorySerializerTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.CategorySerializerTest.test_category_serialization">
+<span class="sig-name descname"><span class="pre">test_category_serialization</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.CategorySerializerTest.test_category_serialization" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.CategorySerializerTest.test_valid_category_creation">
+<span class="sig-name descname"><span class="pre">test_valid_category_creation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.CategorySerializerTest.test_valid_category_creation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_serializers.ContactSerializerTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_serializers.</span></span><span class="sig-name descname"><span class="pre">ContactSerializerTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.ContactSerializerTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>ContactSerializerTest:</p>
+<p>Tests the ContactSerializer, ensuring that contacts are created with valid data and correctly serialized. 
+It also verifies the relationship between the contact and the user, 
+ensuring that user details are included in the serialized contact data.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.ContactSerializerTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.ContactSerializerTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.ContactSerializerTest.test_contact_serialization">
+<span class="sig-name descname"><span class="pre">test_contact_serialization</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.ContactSerializerTest.test_contact_serialization" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.ContactSerializerTest.test_valid_contact_creation">
+<span class="sig-name descname"><span class="pre">test_valid_contact_creation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.ContactSerializerTest.test_valid_contact_creation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_serializers.SubtaskSerializerTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_serializers.</span></span><span class="sig-name descname"><span class="pre">SubtaskSerializerTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.SubtaskSerializerTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>SubtaskSerializerTest:</p>
+<p>Tests the SubtaskSerializer, ensuring that subtasks are created with valid data and correctly serialized, 
+verifying the text and completed status of the subtask in both creation and serialization scenarios.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.SubtaskSerializerTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.SubtaskSerializerTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.SubtaskSerializerTest.test_subtask_serialization">
+<span class="sig-name descname"><span class="pre">test_subtask_serialization</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.SubtaskSerializerTest.test_subtask_serialization" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.SubtaskSerializerTest.test_valid_subtask_creation">
+<span class="sig-name descname"><span class="pre">test_valid_subtask_creation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.SubtaskSerializerTest.test_valid_subtask_creation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_serializers.TaskSerializerTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_serializers.</span></span><span class="sig-name descname"><span class="pre">TaskSerializerTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.TaskSerializerTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>TaskSerializerTest:</p>
+<p>Tests the TaskSerializer, ensuring that tasks are created and updated with valid data, 
+correctly associating categories, contacts, and subtasks. It verifies the relationships, including the creator of the task, 
+and checks that all task attributes are properly handled during serialization and updates.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.TaskSerializerTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.TaskSerializerTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.TaskSerializerTest.test_valid_task_creation">
+<span class="sig-name descname"><span class="pre">test_valid_task_creation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.TaskSerializerTest.test_valid_task_creation" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_serializers.UserDetailsSerializerTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_serializers.</span></span><span class="sig-name descname"><span class="pre">UserDetailsSerializerTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.UserDetailsSerializerTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>UserDetailsSerializerTest:</p>
+<p>Tests the UserDetailsSerializer, verifying that it correctly serializes user details, 
+including name, email, and id, ensuring the data is accurately reflected in the serialized output.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.UserDetailsSerializerTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.UserDetailsSerializerTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.UserDetailsSerializerTest.test_user_details">
+<span class="sig-name descname"><span class="pre">test_user_details</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.UserDetailsSerializerTest.test_user_details" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_serializers.UserRegistrationSerializerTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_serializers.</span></span><span class="sig-name descname"><span class="pre">UserRegistrationSerializerTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.UserRegistrationSerializerTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>UserRegistrationSerializerTest:</p>
+<p>Tests the UserRegistrationSerializer, ensuring valid user registration, verifying that the passwords match, 
+and handling errors for missing or incorrect fields during registration.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.UserRegistrationSerializerTest.test_missing_fields">
+<span class="sig-name descname"><span class="pre">test_missing_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.UserRegistrationSerializerTest.test_missing_fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.UserRegistrationSerializerTest.test_password_mismatch">
+<span class="sig-name descname"><span class="pre">test_password_mismatch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.UserRegistrationSerializerTest.test_password_mismatch" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_serializers.UserRegistrationSerializerTest.test_valid_registration">
+<span class="sig-name descname"><span class="pre">test_valid_registration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.UserRegistrationSerializerTest.test_valid_registration" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_serializers.test_task_update">
+<span class="sig-prename descclassname"><span class="pre">tests.test_serializers.</span></span><span class="sig-name descname"><span class="pre">test_task_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_serializers.test_task_update" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-tests.test_urls">
+<span id="tests-test-urls-module"></span><h2>tests.test_urls module<a class="headerlink" href="#module-tests.test_urls" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_urls.</span></span><span class="sig-name descname"><span class="pre">TestUrls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>Tests the URL routing configuration of the application, ensuring that each named URL correctly resolves to its intended view function or class.
+1. test_set_csrf_url
+Verifies that the set-csrf URL resolves to the set_csrf_token function.
+2. test_login_url
+Verifies that the login URL resolves to the LoginView class.
+3. test_signup_url
+Verifies that the user-register URL resolves to the UserRegistrationView class.
+4. test_user_details_url
+Verifies that the user-details URL resolves to the UserDetailsView class.
+5. test_add_contact_url
+Verifies that the add_contact URL resolves to the ContactListCreateView class.
+6. test_contact_detail_url
+Verifies that the contact_detail URL resolves to the ContactDetailView class, correctly passing a contact ID as an argument.
+7. test_category_list_url
+Verifies that the category-list URL resolves to the CategoryListCreateAPIView class.
+8. test_category_detail_url
+Verifies that the category-detail URL resolves to the CategoryDetailAPIView class, correctly passing a category ID as an argument.
+9. test_subtask_list_url
+Verifies that the subtask-list URL resolves to the SubtaskListCreateAPIView class.
+10. test_subtask_detail_url
+Verifies that the subtask-detail URL resolves to the SubtaskDetailAPIView class, correctly passing a subtask ID as an argument.
+11. test_task_list_url
+Verifies that the task-list URL resolves to the TaskListCreateAPIView class.
+12. test_task_detail_url
+Verifies that the task-detail URL resolves to the TaskDetailAPIView class, correctly passing a task ID as an argument.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_add_contact_url">
+<span class="sig-name descname"><span class="pre">test_add_contact_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_add_contact_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_category_detail_url">
+<span class="sig-name descname"><span class="pre">test_category_detail_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_category_detail_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_category_list_url">
+<span class="sig-name descname"><span class="pre">test_category_list_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_category_list_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_contact_detail_url">
+<span class="sig-name descname"><span class="pre">test_contact_detail_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_contact_detail_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_login_url">
+<span class="sig-name descname"><span class="pre">test_login_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_login_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_set_csrf_url">
+<span class="sig-name descname"><span class="pre">test_set_csrf_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_set_csrf_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_signup_url">
+<span class="sig-name descname"><span class="pre">test_signup_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_signup_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_subtask_detail_url">
+<span class="sig-name descname"><span class="pre">test_subtask_detail_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_subtask_detail_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_subtask_list_url">
+<span class="sig-name descname"><span class="pre">test_subtask_list_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_subtask_list_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_task_detail_url">
+<span class="sig-name descname"><span class="pre">test_task_detail_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_task_detail_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_task_list_url">
+<span class="sig-name descname"><span class="pre">test_task_list_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_task_list_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_urls.TestUrls.test_user_details_url">
+<span class="sig-name descname"><span class="pre">test_user_details_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_urls.TestUrls.test_user_details_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-tests.test_views">
+<span id="tests-test-views-module"></span><h2>tests.test_views module<a class="headerlink" href="#module-tests.test_views" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.CategoryDetailAPIViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">CategoryDetailAPIViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.CategoryDetailAPIViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">APITestCase</span></code></p>
+<p>CategoryDetailAPIViewTest:</p>
+<p>Tests the CategoryDetailAPIView, covering the retrieval, update, and deletion of specific categories by their ID. 
+It ensures that these operations handle the data correctly and return appropriate status codes.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.CategoryDetailAPIViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.CategoryDetailAPIViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.CategoryDetailAPIViewTest.test_category_delete">
+<span class="sig-name descname"><span class="pre">test_category_delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.CategoryDetailAPIViewTest.test_category_delete" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.CategoryDetailAPIViewTest.test_category_retrieve">
+<span class="sig-name descname"><span class="pre">test_category_retrieve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.CategoryDetailAPIViewTest.test_category_retrieve" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.CategoryDetailAPIViewTest.test_category_update">
+<span class="sig-name descname"><span class="pre">test_category_update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.CategoryDetailAPIViewTest.test_category_update" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.CategoryListCreateAPIViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">CategoryListCreateAPIViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.CategoryListCreateAPIViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">APITestCase</span></code></p>
+<p>CategoryListCreateAPIViewTest:</p>
+<p>Tests the CategoryListCreateAPIView, focusing on the retrieval of all categories and the creation of new categories, 
+ensuring that the operations return the correct responses and status codes.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.CategoryListCreateAPIViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.CategoryListCreateAPIViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.CategoryListCreateAPIViewTest.test_category_create">
+<span class="sig-name descname"><span class="pre">test_category_create</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.CategoryListCreateAPIViewTest.test_category_create" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.CategoryListCreateAPIViewTest.test_category_list">
+<span class="sig-name descname"><span class="pre">test_category_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.CategoryListCreateAPIViewTest.test_category_list" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.ContactCreateViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">ContactCreateViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactCreateViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>ContactCreateViewTest:</p>
+<p>Tests the ContactCreateView, ensuring that a logged-in user can successfully create a new contact 
+and that the contact is correctly saved to the database.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.ContactCreateViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactCreateViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.ContactCreateViewTest.test_contact_create_view">
+<span class="sig-name descname"><span class="pre">test_contact_create_view</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactCreateViewTest.test_contact_create_view" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.ContactDetailViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">ContactDetailViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactDetailViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">APITestCase</span></code></p>
+<p>ContactDetailViewTest:</p>
+<p>Tests the ContactDetailView, covering the retrieval, update, and deletion of specific contacts. 
+It ensures that these operations work as expected and return the correct status codes and data.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.ContactDetailViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactDetailViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.ContactDetailViewTest.test_contact_delete">
+<span class="sig-name descname"><span class="pre">test_contact_delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactDetailViewTest.test_contact_delete" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.ContactDetailViewTest.test_contact_retrieve">
+<span class="sig-name descname"><span class="pre">test_contact_retrieve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactDetailViewTest.test_contact_retrieve" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.ContactDetailViewTest.test_contact_update">
+<span class="sig-name descname"><span class="pre">test_contact_update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactDetailViewTest.test_contact_update" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.ContactListCreateViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">ContactListCreateViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactListCreateViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">APITestCase</span></code></p>
+<p>ContactListCreateViewTest:</p>
+<p>Tests the ContactListCreateView, verifying that a user can retrieve a list of their contacts and create new contacts. 
+It ensures that only the authenticated user’s contacts are returned and that new contacts are properly associated with the user.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.ContactListCreateViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactListCreateViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.ContactListCreateViewTest.test_contact_create">
+<span class="sig-name descname"><span class="pre">test_contact_create</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactListCreateViewTest.test_contact_create" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.ContactListCreateViewTest.test_contact_list">
+<span class="sig-name descname"><span class="pre">test_contact_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.ContactListCreateViewTest.test_contact_list" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.LoginViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">LoginViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.LoginViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>LoginViewTest:</p>
+<p>Tests the LoginView, focusing on successful login with valid credentials, 
+failure with invalid credentials, and handling of missing fields in the login request.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.LoginViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.LoginViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.LoginViewTest.test_login_invalid_credentials">
+<span class="sig-name descname"><span class="pre">test_login_invalid_credentials</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.LoginViewTest.test_login_invalid_credentials" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.LoginViewTest.test_login_missing_fields">
+<span class="sig-name descname"><span class="pre">test_login_missing_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.LoginViewTest.test_login_missing_fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.LoginViewTest.test_login_success">
+<span class="sig-name descname"><span class="pre">test_login_success</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.LoginViewTest.test_login_success" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.SubtaskDetailAPIViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">SubtaskDetailAPIViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.SubtaskDetailAPIViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">APITestCase</span></code></p>
+<p>SubtaskDetailAPIViewTest:</p>
+<p>Tests the SubtaskDetailAPIView, covering the retrieval, update, and deletion of specific subtasks. 
+It ensures that these operations are handled correctly and return appropriate status codes.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.SubtaskDetailAPIViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.SubtaskDetailAPIViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.SubtaskDetailAPIViewTest.test_subtask_delete">
+<span class="sig-name descname"><span class="pre">test_subtask_delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.SubtaskDetailAPIViewTest.test_subtask_delete" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.SubtaskDetailAPIViewTest.test_subtask_retrieve">
+<span class="sig-name descname"><span class="pre">test_subtask_retrieve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.SubtaskDetailAPIViewTest.test_subtask_retrieve" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.SubtaskDetailAPIViewTest.test_subtask_update">
+<span class="sig-name descname"><span class="pre">test_subtask_update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.SubtaskDetailAPIViewTest.test_subtask_update" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.SubtaskListCreateAPIViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">SubtaskListCreateAPIViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.SubtaskListCreateAPIViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">APITestCase</span></code></p>
+<p>SubtaskListCreateAPIViewTest:</p>
+<p>Tests the SubtaskListCreateAPIView, verifying that subtasks can be listed and created. 
+It ensures that the correct status codes and data are returned for these operations.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.SubtaskListCreateAPIViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.SubtaskListCreateAPIViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.SubtaskListCreateAPIViewTest.test_subtask_create">
+<span class="sig-name descname"><span class="pre">test_subtask_create</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.SubtaskListCreateAPIViewTest.test_subtask_create" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.SubtaskListCreateAPIViewTest.test_subtask_list">
+<span class="sig-name descname"><span class="pre">test_subtask_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.SubtaskListCreateAPIViewTest.test_subtask_list" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.TaskDetailAPIViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">TaskDetailAPIViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.TaskDetailAPIViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">APITestCase</span></code></p>
+<p>TaskDetailAPIViewTest:</p>
+<p>Tests the TaskDetailAPIView, covering the retrieval, update, and deletion of specific tasks by their ID. 
+It ensures that these operations return the correct data and status codes, 
+and that tasks are correctly updated or deleted.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.TaskDetailAPIViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.TaskDetailAPIViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.TaskDetailAPIViewTest.test_task_delete">
+<span class="sig-name descname"><span class="pre">test_task_delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.TaskDetailAPIViewTest.test_task_delete" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.TaskDetailAPIViewTest.test_task_retrieve">
+<span class="sig-name descname"><span class="pre">test_task_retrieve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.TaskDetailAPIViewTest.test_task_retrieve" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.TaskDetailAPIViewTest.test_task_update">
+<span class="sig-name descname"><span class="pre">test_task_update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.TaskDetailAPIViewTest.test_task_update" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.TaskListCreateAPIViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">TaskListCreateAPIViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.TaskListCreateAPIViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">APITestCase</span></code></p>
+<p>TaskListCreateAPIViewTest:</p>
+<p>Tests the TaskListCreateAPIView, focusing on the creation of tasks by an authenticated user. 
+It verifies that the task is correctly saved to the database and associated with the user.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.TaskListCreateAPIViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.TaskListCreateAPIViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.TaskListCreateAPIViewTest.test_task_create">
+<span class="sig-name descname"><span class="pre">test_task_create</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.TaskListCreateAPIViewTest.test_task_create" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.UserDetailsViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">UserDetailsViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.UserDetailsViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">APITestCase</span></code></p>
+<p>UserDetailsViewTest:</p>
+<p>Tests the UserDetailsView, verifying that an authenticated user can retrieve their own details, 
+and checks the response for accuracy and correct status codes.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.UserDetailsViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.UserDetailsViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.UserDetailsViewTest.test_get_user_details">
+<span class="sig-name descname"><span class="pre">test_get_user_details</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.UserDetailsViewTest.test_get_user_details" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_views.UserRegistrationViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_views.</span></span><span class="sig-name descname"><span class="pre">UserRegistrationViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.UserRegistrationViewTest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">APITestCase</span></code></p>
+<p>UserRegistrationViewTest:</p>
+<p>Tests the UserRegistrationView, ensuring that a new user can be successfully registered 
+and that appropriate validation errors are raised for invalid or incomplete registration data.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.UserRegistrationViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.UserRegistrationViewTest.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_views.UserRegistrationViewTest.test_registration_success">
+<span class="sig-name descname"><span class="pre">test_registration_success</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_views.UserRegistrationViewTest.test_registration_success" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-tests">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tests" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">tests package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-tests.test_admin">tests.test_admin module</a></li>
+<li><a class="reference internal" href="#module-tests.test_forms">tests.test_forms module</a><ul>
+<li><a class="reference internal" href="#tests.test_forms.ContactFormTest"><code class="docutils literal notranslate"><span class="pre">ContactFormTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_forms.ContactFormTest.test_invalid_contact_form"><code class="docutils literal notranslate"><span class="pre">ContactFormTest.test_invalid_contact_form()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_forms.ContactFormTest.test_valid_contact_form"><code class="docutils literal notranslate"><span class="pre">ContactFormTest.test_valid_contact_form()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-tests.test_models">tests.test_models module</a><ul>
+<li><a class="reference internal" href="#tests.test_models.CategoryModelTest"><code class="docutils literal notranslate"><span class="pre">CategoryModelTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_models.CategoryModelTest.setUp"><code class="docutils literal notranslate"><span class="pre">CategoryModelTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_models.CategoryModelTest.test_category_creation"><code class="docutils literal notranslate"><span class="pre">CategoryModelTest.test_category_creation()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_models.ContactModelTest"><code class="docutils literal notranslate"><span class="pre">ContactModelTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_models.ContactModelTest.setUp"><code class="docutils literal notranslate"><span class="pre">ContactModelTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_models.ContactModelTest.test_contact_creation"><code class="docutils literal notranslate"><span class="pre">ContactModelTest.test_contact_creation()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_models.CustomUserManagerTest"><code class="docutils literal notranslate"><span class="pre">CustomUserManagerTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_models.CustomUserManagerTest.setUp"><code class="docutils literal notranslate"><span class="pre">CustomUserManagerTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_models.CustomUserManagerTest.test_create_superuser"><code class="docutils literal notranslate"><span class="pre">CustomUserManagerTest.test_create_superuser()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_models.CustomUserManagerTest.test_create_superuser_without_is_staff"><code class="docutils literal notranslate"><span class="pre">CustomUserManagerTest.test_create_superuser_without_is_staff()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_models.CustomUserManagerTest.test_create_superuser_without_is_superuser"><code class="docutils literal notranslate"><span class="pre">CustomUserManagerTest.test_create_superuser_without_is_superuser()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_models.CustomUserModelTest"><code class="docutils literal notranslate"><span class="pre">CustomUserModelTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_models.CustomUserModelTest.setUp"><code class="docutils literal notranslate"><span class="pre">CustomUserModelTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_models.CustomUserModelTest.test_create_superuser"><code class="docutils literal notranslate"><span class="pre">CustomUserModelTest.test_create_superuser()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_models.CustomUserModelTest.test_create_user"><code class="docutils literal notranslate"><span class="pre">CustomUserModelTest.test_create_user()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_models.SubtaskModelTest"><code class="docutils literal notranslate"><span class="pre">SubtaskModelTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_models.SubtaskModelTest.setUp"><code class="docutils literal notranslate"><span class="pre">SubtaskModelTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_models.SubtaskModelTest.test_subtask_creation"><code class="docutils literal notranslate"><span class="pre">SubtaskModelTest.test_subtask_creation()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_models.TaskModelTest"><code class="docutils literal notranslate"><span class="pre">TaskModelTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_models.TaskModelTest.setUp"><code class="docutils literal notranslate"><span class="pre">TaskModelTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_models.TaskModelTest.test_task_creation"><code class="docutils literal notranslate"><span class="pre">TaskModelTest.test_task_creation()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-tests.test_serializers">tests.test_serializers module</a><ul>
+<li><a class="reference internal" href="#tests.test_serializers.CategorySerializerTest"><code class="docutils literal notranslate"><span class="pre">CategorySerializerTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_serializers.CategorySerializerTest.setUp"><code class="docutils literal notranslate"><span class="pre">CategorySerializerTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_serializers.CategorySerializerTest.test_category_serialization"><code class="docutils literal notranslate"><span class="pre">CategorySerializerTest.test_category_serialization()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_serializers.CategorySerializerTest.test_valid_category_creation"><code class="docutils literal notranslate"><span class="pre">CategorySerializerTest.test_valid_category_creation()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_serializers.ContactSerializerTest"><code class="docutils literal notranslate"><span class="pre">ContactSerializerTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_serializers.ContactSerializerTest.setUp"><code class="docutils literal notranslate"><span class="pre">ContactSerializerTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_serializers.ContactSerializerTest.test_contact_serialization"><code class="docutils literal notranslate"><span class="pre">ContactSerializerTest.test_contact_serialization()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_serializers.ContactSerializerTest.test_valid_contact_creation"><code class="docutils literal notranslate"><span class="pre">ContactSerializerTest.test_valid_contact_creation()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_serializers.SubtaskSerializerTest"><code class="docutils literal notranslate"><span class="pre">SubtaskSerializerTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_serializers.SubtaskSerializerTest.setUp"><code class="docutils literal notranslate"><span class="pre">SubtaskSerializerTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_serializers.SubtaskSerializerTest.test_subtask_serialization"><code class="docutils literal notranslate"><span class="pre">SubtaskSerializerTest.test_subtask_serialization()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_serializers.SubtaskSerializerTest.test_valid_subtask_creation"><code class="docutils literal notranslate"><span class="pre">SubtaskSerializerTest.test_valid_subtask_creation()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_serializers.TaskSerializerTest"><code class="docutils literal notranslate"><span class="pre">TaskSerializerTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_serializers.TaskSerializerTest.setUp"><code class="docutils literal notranslate"><span class="pre">TaskSerializerTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_serializers.TaskSerializerTest.test_valid_task_creation"><code class="docutils literal notranslate"><span class="pre">TaskSerializerTest.test_valid_task_creation()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_serializers.UserDetailsSerializerTest"><code class="docutils literal notranslate"><span class="pre">UserDetailsSerializerTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_serializers.UserDetailsSerializerTest.setUp"><code class="docutils literal notranslate"><span class="pre">UserDetailsSerializerTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_serializers.UserDetailsSerializerTest.test_user_details"><code class="docutils literal notranslate"><span class="pre">UserDetailsSerializerTest.test_user_details()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_serializers.UserRegistrationSerializerTest"><code class="docutils literal notranslate"><span class="pre">UserRegistrationSerializerTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_serializers.UserRegistrationSerializerTest.test_missing_fields"><code class="docutils literal notranslate"><span class="pre">UserRegistrationSerializerTest.test_missing_fields()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_serializers.UserRegistrationSerializerTest.test_password_mismatch"><code class="docutils literal notranslate"><span class="pre">UserRegistrationSerializerTest.test_password_mismatch()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_serializers.UserRegistrationSerializerTest.test_valid_registration"><code class="docutils literal notranslate"><span class="pre">UserRegistrationSerializerTest.test_valid_registration()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_serializers.test_task_update"><code class="docutils literal notranslate"><span class="pre">test_task_update()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-tests.test_urls">tests.test_urls module</a><ul>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls"><code class="docutils literal notranslate"><span class="pre">TestUrls</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_add_contact_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_add_contact_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_category_detail_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_category_detail_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_category_list_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_category_list_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_contact_detail_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_contact_detail_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_login_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_login_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_set_csrf_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_set_csrf_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_signup_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_signup_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_subtask_detail_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_subtask_detail_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_subtask_list_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_subtask_list_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_task_detail_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_task_detail_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_task_list_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_task_list_url()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_urls.TestUrls.test_user_details_url"><code class="docutils literal notranslate"><span class="pre">TestUrls.test_user_details_url()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-tests.test_views">tests.test_views module</a><ul>
+<li><a class="reference internal" href="#tests.test_views.CategoryDetailAPIViewTest"><code class="docutils literal notranslate"><span class="pre">CategoryDetailAPIViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.CategoryDetailAPIViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">CategoryDetailAPIViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.CategoryDetailAPIViewTest.test_category_delete"><code class="docutils literal notranslate"><span class="pre">CategoryDetailAPIViewTest.test_category_delete()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.CategoryDetailAPIViewTest.test_category_retrieve"><code class="docutils literal notranslate"><span class="pre">CategoryDetailAPIViewTest.test_category_retrieve()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.CategoryDetailAPIViewTest.test_category_update"><code class="docutils literal notranslate"><span class="pre">CategoryDetailAPIViewTest.test_category_update()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.CategoryListCreateAPIViewTest"><code class="docutils literal notranslate"><span class="pre">CategoryListCreateAPIViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.CategoryListCreateAPIViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">CategoryListCreateAPIViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.CategoryListCreateAPIViewTest.test_category_create"><code class="docutils literal notranslate"><span class="pre">CategoryListCreateAPIViewTest.test_category_create()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.CategoryListCreateAPIViewTest.test_category_list"><code class="docutils literal notranslate"><span class="pre">CategoryListCreateAPIViewTest.test_category_list()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.ContactCreateViewTest"><code class="docutils literal notranslate"><span class="pre">ContactCreateViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.ContactCreateViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">ContactCreateViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.ContactCreateViewTest.test_contact_create_view"><code class="docutils literal notranslate"><span class="pre">ContactCreateViewTest.test_contact_create_view()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.ContactDetailViewTest"><code class="docutils literal notranslate"><span class="pre">ContactDetailViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.ContactDetailViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">ContactDetailViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.ContactDetailViewTest.test_contact_delete"><code class="docutils literal notranslate"><span class="pre">ContactDetailViewTest.test_contact_delete()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.ContactDetailViewTest.test_contact_retrieve"><code class="docutils literal notranslate"><span class="pre">ContactDetailViewTest.test_contact_retrieve()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.ContactDetailViewTest.test_contact_update"><code class="docutils literal notranslate"><span class="pre">ContactDetailViewTest.test_contact_update()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.ContactListCreateViewTest"><code class="docutils literal notranslate"><span class="pre">ContactListCreateViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.ContactListCreateViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">ContactListCreateViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.ContactListCreateViewTest.test_contact_create"><code class="docutils literal notranslate"><span class="pre">ContactListCreateViewTest.test_contact_create()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.ContactListCreateViewTest.test_contact_list"><code class="docutils literal notranslate"><span class="pre">ContactListCreateViewTest.test_contact_list()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.LoginViewTest"><code class="docutils literal notranslate"><span class="pre">LoginViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.LoginViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">LoginViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.LoginViewTest.test_login_invalid_credentials"><code class="docutils literal notranslate"><span class="pre">LoginViewTest.test_login_invalid_credentials()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.LoginViewTest.test_login_missing_fields"><code class="docutils literal notranslate"><span class="pre">LoginViewTest.test_login_missing_fields()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.LoginViewTest.test_login_success"><code class="docutils literal notranslate"><span class="pre">LoginViewTest.test_login_success()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.SubtaskDetailAPIViewTest"><code class="docutils literal notranslate"><span class="pre">SubtaskDetailAPIViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.SubtaskDetailAPIViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">SubtaskDetailAPIViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.SubtaskDetailAPIViewTest.test_subtask_delete"><code class="docutils literal notranslate"><span class="pre">SubtaskDetailAPIViewTest.test_subtask_delete()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.SubtaskDetailAPIViewTest.test_subtask_retrieve"><code class="docutils literal notranslate"><span class="pre">SubtaskDetailAPIViewTest.test_subtask_retrieve()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.SubtaskDetailAPIViewTest.test_subtask_update"><code class="docutils literal notranslate"><span class="pre">SubtaskDetailAPIViewTest.test_subtask_update()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.SubtaskListCreateAPIViewTest"><code class="docutils literal notranslate"><span class="pre">SubtaskListCreateAPIViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.SubtaskListCreateAPIViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">SubtaskListCreateAPIViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.SubtaskListCreateAPIViewTest.test_subtask_create"><code class="docutils literal notranslate"><span class="pre">SubtaskListCreateAPIViewTest.test_subtask_create()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.SubtaskListCreateAPIViewTest.test_subtask_list"><code class="docutils literal notranslate"><span class="pre">SubtaskListCreateAPIViewTest.test_subtask_list()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.TaskDetailAPIViewTest"><code class="docutils literal notranslate"><span class="pre">TaskDetailAPIViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.TaskDetailAPIViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">TaskDetailAPIViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.TaskDetailAPIViewTest.test_task_delete"><code class="docutils literal notranslate"><span class="pre">TaskDetailAPIViewTest.test_task_delete()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.TaskDetailAPIViewTest.test_task_retrieve"><code class="docutils literal notranslate"><span class="pre">TaskDetailAPIViewTest.test_task_retrieve()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.TaskDetailAPIViewTest.test_task_update"><code class="docutils literal notranslate"><span class="pre">TaskDetailAPIViewTest.test_task_update()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.TaskListCreateAPIViewTest"><code class="docutils literal notranslate"><span class="pre">TaskListCreateAPIViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.TaskListCreateAPIViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">TaskListCreateAPIViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.TaskListCreateAPIViewTest.test_task_create"><code class="docutils literal notranslate"><span class="pre">TaskListCreateAPIViewTest.test_task_create()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.UserDetailsViewTest"><code class="docutils literal notranslate"><span class="pre">UserDetailsViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.UserDetailsViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">UserDetailsViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.UserDetailsViewTest.test_get_user_details"><code class="docutils literal notranslate"><span class="pre">UserDetailsViewTest.test_get_user_details()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests.test_views.UserRegistrationViewTest"><code class="docutils literal notranslate"><span class="pre">UserRegistrationViewTest</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_views.UserRegistrationViewTest.setUp"><code class="docutils literal notranslate"><span class="pre">UserRegistrationViewTest.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_views.UserRegistrationViewTest.test_registration_success"><code class="docutils literal notranslate"><span class="pre">UserRegistrationViewTest.test_registration_success()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/tests.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Join_api 2024 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">tests package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Fabian.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
+    </div>
+  </body>
+</html>
